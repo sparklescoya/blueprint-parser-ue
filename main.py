@@ -1,19 +1,19 @@
 import json
+from core import BlueprintParser
 
-import modules.intialize as intialize
-
-content = intialize.load_file("input.txt")  # Load the file
+# Initialize parser and load files
+parser = BlueprintParser(do_prettify_node_name=True)
 
 # Separate the nodes
-nodes = intialize.seperate_nodes(content)
+nodes = parser.seperate_nodes()
 
 # Name the nodes and create a JSON structure
 nodes_json = {}
 
 for node in nodes:
-    node_name = intialize.get_node_name(node)
-    node_pos = intialize.get_node_position(node)
-    node_pins = intialize.get_node_pins(node) # It outputs a list of tuples (pin_name, pin_direction, pin_type, pin_value, pin_origin)
+    node_name = parser.get_node_name(node)
+    node_pos = parser.get_node_position(node)
+    node_pins = parser.get_node_pins(node) # It outputs a list of tuples (pin_name, pin_direction, pin_type, pin_value, pin_origin)
 
     node_properties = {}
 

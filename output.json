@@ -1,5 +1,5 @@
 {
-    "ReceiveBeginPlay": {
+    "EventBeginPlay": {
         "PositionX": -240,
         "PositionY": -544,
         "Pins": {
@@ -17,6 +17,12 @@
         "PositionX": -48,
         "PositionY": -541,
         "Pins": {
+            "df": {
+                "Direction": "Input",
+                "Type": "vector",
+                "Value": "0, 0, 0",
+                "Origin": "/Script/CoreUObject.ScriptStruct'/Script/CoreUObject.Vector'"
+            },
             "execute": {
                 "Direction": "Input",
                 "Type": "exec"
