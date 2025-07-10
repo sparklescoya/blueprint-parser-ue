@@ -47,7 +47,7 @@ End Object
 ## Output:
 ```json
 {
-    "ReceiveBeginPlay": {
+    "BeginPlay": {
         "PositionX": -240,
         "PositionY": -544,
         "Pins": {
